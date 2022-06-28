@@ -3,14 +3,18 @@
   padding: 0;
 }
 
+body {
+  position: relative;
+  font-family: sans-serif;
+}
+
 .headingBar {
   background-color: #3399cc;
 }
 
 .headingText {
-  vertical-align: middle;
   color: white;
-  font-size: larger;
+  font-size: 60px;
   padding: 30px 0 30px 25px;
 }
 
@@ -44,11 +48,32 @@ img {
   padding-top: 8px;
 }
 
-.middle {
-  border: solid blue;
-}
-
 .box {
   margin-left: 25px;
+  color: #575555;
+  cursor: context-menu;
+}
+
+.boxes {
+  border: 1px solid #cecccc;
+  width: 30vw;
+  padding-left: 15px;
+  cursor: context-menu;
+}
+
+.boxes h2 {
+  font-weight: lighter;
+}
+
+.boxes:hover {
+  background-color: #cee7f2;
+}
+
+#viewBox {
+  color: #414141;
+}
+
+#viewBox form {
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

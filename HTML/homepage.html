@@ -10,26 +10,32 @@
   <body>
     <div class="headingBar">
       <div class="headingText">
-        <h1>Address Book</h1>
+        <span>Address Book</span>
       </div>
     </div>
     <div class="navigationBar">
       <div class="navigations">
         <li><a href="#">HOME</a></li>
-        <li><a href="#">+ADD</a></li>
+        <li onclick="showForm()" style="cursor: pointer"><a>+ADD</a></li>
       </div>
       <img src="../Images/blog-icon.png" alt="Img" />
     </div>
-    <div class="middle">
-      <div class="middleLeft">
-        <h3 style="margin: 30px 0 25px 25px">CONTACTS</h3>
-        <div class="box">
-          <div class="box-1">Box-1</div>
-          <div class="box-2">Box-2</div>
-          <div class="box-3">Box-3</div>
-          <div class="box-4">Box-4</div>
+    <div class="middle" style="display: flex; flex-flow: row wrap">
+      <div style="display: inline-block" class="middleLeft">
+        <!-- <div style="display: flex; flex-flow: row wrap" class="middleLeft"> -->
+        <p style="margin: 30px 0 20px 20px; font-size: 18px; font-weight: bold">
+          CONTACTS
+        </p>
+        <div class="box" id="contactList">
+          <!-- Rendered dynamically by JS -->
         </div>
       </div>
+      <div
+        id="viewBox"
+        class="middleRight"
+        style="margin-left: 150px; margin-top: 60px; display: inline-block"
+      ></div>
     </div>
+    <script src="../JS/main.js"></script>
   </body>
 </html>
